@@ -8,7 +8,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     step:
-      - uses: actions/chechout@v4
+      - uses: actions/checkout@v4
       - run: echo "Hacemos pull del código"
       - run: echo "Correr Migraciones"
       - run: echo "Generar Binario"
