@@ -1,0 +1,14 @@
+name: "First Github Workflow"
+#Trigger: When does the workflow begin?
+on: 
+  push:
+    branches: ["main"]
+#Job name "Deploy", runs-on is the worker that performs the Job
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      run: echo "Hacemos pull del código"
+      run: echo "Correr Migraciones"
+      run: echo "Generar Binario"
+      run: echo "Publicar Versión"
